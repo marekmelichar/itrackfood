@@ -23,8 +23,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
+          local-dir: ./build/
           server: ${{ secrets.ftp_server }}
           server-dir: itrackfood.net/web/
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
-          dry-run: true
+          # Deletes ALL contents of server-dir, even items in excluded with 'exclude' argument
+          # dangerous-clean-slate: true
