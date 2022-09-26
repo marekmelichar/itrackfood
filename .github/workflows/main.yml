@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           # Deletes ALL contents of server-dir, even items in excluded with 'exclude' argument
-          dangerous-clean-slate: true
+          # dangerous-clean-slate: true
