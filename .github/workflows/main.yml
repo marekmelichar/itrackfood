@@ -23,10 +23,13 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
+          # Folder to upload from, must end with trailing slash /
           local-dir: ./build/
-          server: ${{ secrets.ftp_server }}
+          # Folder to upload to (on the server), must end with trailing slash /
           server-dir: itrackfood.net/web/
+          # Deployment destination server
+          server: ${{ secrets.ftp_server }}
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           # Deletes ALL contents of server-dir, even items in excluded with 'exclude' argument
-          # dangerous-clean-slate: true
+          dangerous-clean-slate: true
