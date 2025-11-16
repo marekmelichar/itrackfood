@@ -1,16 +1,19 @@
-import { Box } from "@mui/material";
-import { Outlet } from "react-router-dom";
-import { Header } from "../Header";
+import { Box } from '@mui/material';
+import { Outlet } from 'react-router-dom';
 
-import styles from "./index.module.css";
+import { Footer } from '../Footer';
+import { Header } from '../Header';
+
+import { containerStyles, mainLayoutStyles } from './styles';
 
 export const MainLayout = () => {
   return (
-    <Box>
+    <Box sx={containerStyles}>
       <Header />
-      <Box className={styles.mainLayout}>
+      <Box sx={mainLayoutStyles}>
         <Outlet />
       </Box>
+      <Footer />
     </Box>
   );
 };

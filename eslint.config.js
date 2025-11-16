@@ -128,12 +128,6 @@ export default [
       'object-shorthand': 'error',
       'prefer-arrow-callback': 'error',
       'prefer-template': 'error',
-      'template-curly-spacing': 'error',
-      'arrow-spacing': 'error',
-      'comma-dangle': ['error', 'always-multiline'],
-      semi: ['error', 'always'],
-      quotes: ['error', 'single'],
-      'jsx-quotes': ['error', 'prefer-double'],
     },
   },
 

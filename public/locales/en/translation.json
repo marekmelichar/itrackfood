@@ -1,17 +1,105 @@
 {
-  "App": {
-    "Logo": "Logo",
-    "Nav": {
-      "Posts": "Posts"
+  "Common": {
+    "Login": "Login",
+    "SignUp": "Sign Up",
+    "Email": "Email",
+    "Password": "Password",
+    "Or": "OR",
+    "Loading": "Loading..."
+  },
+  "LandingPage": {
+    "Login": "Login",
+    "HeroTitle": "Track Your Way to a Healthier You",
+    "HeroSubtitle": "Understanding the advantages of tracking the food you eat can significantly impact your journey towards a healthier lifestyle. Here are some key benefits to consider:",
+    "HeroButton": "Start Your Health Journey",
+    "RecommendedBy": "Recommended by",
+    "SectionTitle": "Understanding the advantages of tracking the food you eat can significantly impact your journey towards a healthier lifestyle. Here are some key benefits to consider:",
+    "Features": {
+      "NutritionalAwareness": {
+        "Title": "Nutritional Awareness",
+        "Description": "Food tracking brings your attention to the nutritional content of your meals. By logging what you eat, you become more mindful of what you're consuming. This increased awareness can lead to better dietary choices and, ultimately, a healthier lifestyle."
+      },
+      "WeightManagement": {
+        "Title": "Weight Management",
+        "Description": "Tracking your food intake allows you to accurately monitor your caloric consumption. By understanding the energy balance between calories consumed and calories burned, you can create an effective plan tailored to your needs."
+      },
+      "PortionControl": {
+        "Title": "Portion Control",
+        "Description": "By logging your meals, you gain a better understanding of appropriate portion sizes. This knowledge can ensure you're consuming the right amount of nutrients."
+      },
+      "FoodSensitivities": {
+        "Title": "Identifying Food Sensitivities",
+        "Description": "Keeping a record of your food intake can help you identify patterns and correlations between certain foods and adverse reactions. This information can be invaluable in managing allergies, intolerances, or digestive issues."
+      },
+      "DietBalance": {
+        "Title": "Improved Diet Balance",
+        "Description": "Tracking your meals enables you to evaluate the balance of macronutrients (protein, carbohydrates, and fats) and micronutrients (vitamins and minerals) in your diet. This can help you identify areas where adjustments are needed to ensure optimal nutrition and support overall health."
+      },
+      "Accountability": {
+        "Title": "Accountability and Motivation",
+        "Description": "Regularly logging your meals increases your sense of responsibility for your eating habits. Moreover, seeing your progress over time, whether it's weight loss or maintenance goals, can boost your self-esteem and reinforce your determination to maintain a healthy lifestyle."
+      },
+      "MealPlanning": {
+        "Title": "Better Meal Planning",
+        "Description": "Food tracking allows you to identify patterns in your eating habits, making it easier to plan your meals more effectively. By analyzing your logged data, you can ensure you're getting an optimal nutrition and support overall health. This can lead to more satisfying, wholesome meal choices and reduce the likelihood of impulsive, unhealthy choices."
+      }
     },
-    "Loading": "Loading...",
-    "Save": "Save"
+    "Testimonials": {
+      "Title": "Testimonials",
+      "Sarah": {
+        "Name": "Sarah, 32",
+        "Text": "This food tracking app has been a game-changer for me. It's easy to use and has helped me stay on top of my nutrition goals. I can't imagine managing my diet without it!"
+      },
+      "John": {
+        "Name": "John, 45",
+        "Text": "I've tried several food tracking apps, and this one is by far the best. The user-friendly interface and comprehensive tracking features have made it simple for me to maintain a healthier lifestyle. I highly recommend it!"
+      },
+      "Emily": {
+        "Name": "Emily, 28",
+        "Text": "As a busy professional, I used to struggle with keeping track of my meals. This app has made it so much easier! I love how I can quickly log my food intake and see the nutritional breakdown. It's been a fantastic tool!"
+      },
+      "Michael": {
+        "Name": "Michael, 38",
+        "Text": "I've been using this app for six months now and the results are incredible. The detailed analytics help me understand my eating patterns and make better choices. It's like having a nutritionist in my pocket!"
+      },
+      "Lisa": {
+        "Name": "Lisa, 29",
+        "Text": "Finally, a food tracking app that actually works! The barcode scanner is a lifesaver, and I love how it remembers my favorite meals. My energy levels have improved significantly since I started tracking."
+      },
+      "David": {
+        "Name": "David, 52",
+        "Text": "As someone managing diabetes, this app has been essential. The ability to track not just calories but also carbs and other nutrients has made a huge difference in my health. Highly recommended for anyone serious about their diet."
+      }
+    }
   },
-  "Home": {
-    "Heading": "Heading"
+  "LoginPage": {
+    "Title": "Log in",
+    "Subtitle": "Enter your credentials to access your account",
+    "GoogleButton": "Log in with Google",
+    "ForgotPassword": "Forgot your password?",
+    "RememberMe": "Remember information",
+    "NotAMember": "Not a member?"
   },
-  "ErrorPage": {
-    "Heading": "Something went wrong 😢",
-    "GoToHomePage": "Go to homepage"
+  "SignUpPage": {
+    "Title": "Create an account",
+    "GoogleButton": "Sign up with Google",
+    "Name": "Name",
+    "AlreadyMember": "Already a member?"
+  },
+  "ForgotPasswordPage": {
+    "Title": "Forgot password?",
+    "Subtitle": "No worries, we'll send you reset instructions.",
+    "SubmitButton": "Reset Password",
+    "BackToLogin": "Back to login"
+  },
+  "CookieBanner": {
+    "Title": "Cookie Consent",
+    "Description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. You can choose to accept all cookies or only essential ones. For more information, please read our",
+    "PolicyLink": "cookie policy",
+    "EssentialOnly": "Essential Only",
+    "AcceptAll": "Accept All"
+  },
+  "Footer": {
+    "Copyright": "iTrackFood. All rights reserved."
   }
 }

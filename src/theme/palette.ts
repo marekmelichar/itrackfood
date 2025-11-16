@@ -4,9 +4,9 @@
 
 const palette = {
   primary: {
-    main: '#546EF7', // Primary blue
-    light: '#D3E6FF', // Light blue, use also for hover
-    dark: '#3951A7',
+    main: '#88BF31', // Primary green from designs
+    light: '#BADA88', // Light green for hover
+    dark: '#53751E', // Dark green
     contrastText: '#FFFFFF',
   },
   secondary: {
@@ -51,37 +51,21 @@ const palette = {
     800: '#616161',
     900: '#4A4A4A', // Primary text
   },
-  accepted: {
-    main: '#C79A00',
-    light: '#F9F5EA',
+  customBg: {
+    main: '#FFF3E0',
+    light: '#FFF8E1',
+    dark: '#FFE0B2',
+    contrastText: '#4A4A4A',
   },
-  accepted_to_check: {
-    main: '#8B4513',
-    light: '#FFBBA0',
+  background: {
+    default: '#FFFFFF',
+    paper: '#FFFFFF',
   },
-  cancelled: {
-    main: '#FF0202',
-    light: '#FEEBE9',
-  },
-  confirmed: {
-    main: '#9546C1',
-    light: '#F4EEF8',
-  },
-  in_production: {
-    main: '#7CA546',
-    light: '#F3F9EA',
-  },
-  invoiced: {
-    main: '#4A4A4A',
-    light: '#F7F7F7',
-  },
-  to_accept: {
-    main: '#1576C1',
-    light: '#EAF1F8',
-  },
-  unknown: {
-    main: '#4A4A4A',
-    light: '#F7F7F7',
+  divider: '#E0E0E0',
+  text: {
+    primary: '#4A4A4A',
+    secondary: '#707070',
+    disabled: '#B1B1B1',
   },
 };
 

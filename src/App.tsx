@@ -8,16 +8,41 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'dayjs/locale/cs';
 
 import { MainLayout } from './components';
-import { ROUTE_HOME, ROUTE_LOGIN, SNACKBARS_AUTOHIDE_DURATION } from './config';
-import { LoginPage } from './features/auth';
-import { MainPage, NotFoundPage } from './pages';
+import {
+  ROUTE_FORGOT_PASSWORD,
+  ROUTE_HOME,
+  ROUTE_LANDING,
+  ROUTE_LOGIN,
+  ROUTE_SIGNUP,
+  SNACKBARS_AUTOHIDE_DURATION,
+} from './config';
+import {
+  ForgotPasswordPage,
+  LandingPage,
+  LoginPage,
+  MainPage,
+  NotFoundPage,
+  SignUpPage,
+} from './pages';
 import theme from './theme';
 import './App.css';
 
 const router = createBrowserRouter([
   {
+    path: ROUTE_LANDING,
+    element: <LandingPage />,
+  },
+  {
     path: ROUTE_LOGIN,
     element: <LoginPage />,
+  },
+  {
+    path: ROUTE_SIGNUP,
+    element: <SignUpPage />,
+  },
+  {
+    path: ROUTE_FORGOT_PASSWORD,
+    element: <ForgotPasswordPage />,
   },
   {
     path: ROUTE_HOME,
