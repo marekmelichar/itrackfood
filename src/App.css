@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+/* Application fonts
+   ================= */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Roboto";
+  font-style: bold;
+  font-weight: bold;
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  overflow-y: auto;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+html::-webkit-scrollbar-corner {
+  background: #e6e6e6;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #bebebe;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
+div::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+div::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+div::-webkit-scrollbar-corder {
+  background: #e6e6e6;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #bebebe;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
+.isFocused div::-webkit-scrollbar {
+  width: 14px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+textarea::-webkit-scrollbar-corder {
+  background: #e6e6e6;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #bebebe;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
+img {
+  width: 100%;
+}
+
+@keyframes blink {
+  0% {
+    background-color: initial;
+  }
+  50% {
+    background-color: #c4ffc4;
+  }
+  100% {
+    background-color: initial;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:focus-visible {
+  outline: none;
+}
+
+#notistack-snackbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.notistack-MuiContent {
+  box-shadow: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notistack-MuiContent-warning {
+  background-color: #fee9c5 !important;
+}
+
+.notistack-MuiContent-error {
+  background-color: #ffb3b3 !important;
+}
+
+.notistack-MuiContent-info {
+  background-color: #b9d6ec !important;
+}
+
+.notistack-MuiContent-success {
+  background-color: #dbecc1 !important;
 }

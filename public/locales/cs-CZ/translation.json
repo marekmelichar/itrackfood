@@ -1,0 +1,105 @@
+{
+  "Common": {
+    "Login": "Přihlásit se",
+    "SignUp": "Registrovat se",
+    "Email": "Email",
+    "Password": "Heslo",
+    "Or": "NEBO",
+    "Loading": "Načítání..."
+  },
+  "LandingPage": {
+    "Login": "Přihlásit se",
+    "HeroTitle": "Sledujte si cestu ke zdravějšímu životu",
+    "HeroSubtitle": "Pochopení výhod sledování jídla, které konzumujete, může významně ovlivnit vaši cestu ke zdravějšímu životnímu stylu. Zde jsou některé klíčové výhody, které je třeba zvážit:",
+    "HeroButton": "Začněte svou zdravou cestu",
+    "RecommendedBy": "Doporučeno",
+    "SectionTitle": "Pochopení výhod sledování jídla, které konzumujete, může významně ovlivnit vaši cestu ke zdravějšímu životnímu stylu. Zde jsou některé klíčové výhody, které je třeba zvážit:",
+    "Features": {
+      "NutritionalAwareness": {
+        "Title": "Nutriční povědomí",
+        "Description": "Sledování jídla přitahuje vaši pozornost k nutričnímu obsahu vašich jídel. Zaznamenáváním toho, co jíte, si více uvědomujete, co konzumujete. Toto zvýšené povědomí může vést k lepším stravovacím volbám a nakonec ke zdravějšímu životnímu stylu."
+      },
+      "WeightManagement": {
+        "Title": "Řízení hmotnosti",
+        "Description": "Sledování příjmu potravy vám umožňuje přesně monitorovat příjem kalorií. Pochopením energetické rovnováhy mezi spotřebovanými a spálenými kaloriemi si můžete vytvořit efektivní plán přizpůsobený vašim potřebám."
+      },
+      "PortionControl": {
+        "Title": "Kontrola porcí",
+        "Description": "Zaznamenáváním jídel získáte lepší pochopení vhodných velikostí porcí. Tyto znalosti vám mohou pomoci zajistit, že konzumujete správné množství živin."
+      },
+      "FoodSensitivities": {
+        "Title": "Identifikace potravinových nesnášenlivostí",
+        "Description": "Vedení záznamu o příjmu potravy vám může pomoci identifikovat vzorce a korelace mezi určitými potravinami a nepříznivými reakcemi. Tyto informace mohou být neocenitelné při zvládání alergií, intolerance nebo trávicích problémů."
+      },
+      "DietBalance": {
+        "Title": "Zlepšená rovnováha stravy",
+        "Description": "Sledování jídel vám umožňuje vyhodnotit rovnováhu makroživin (bílkoviny, sacharidy a tuky) a mikroživin (vitamíny a minerály) ve vaší stravě. To vám může pomoci identifikovat oblasti, kde jsou potřebné úpravy k zajištění optimální výživy a podpory celkového zdraví."
+      },
+      "Accountability": {
+        "Title": "Odpovědnost a motivace",
+        "Description": "Pravidelné zaznamenávání jídel zvyšuje váš pocit odpovědnosti za vaše stravovací návyky. Navíc, vidění vašeho pokroku v průběhu času, ať už jde o hubnutí nebo udržovací cíle, může posílit vaše sebevědomí a posílit vaše odhodlání udržovat zdravý životní styl."
+      },
+      "MealPlanning": {
+        "Title": "Lepší plánování jídel",
+        "Description": "Sledování jídla vám umožňuje identifikovat vzorce ve vašich stravovacích návycích, což usnadňuje efektivnější plánování jídel. Analýzou zaznamenaných dat můžete zajistit, že získáváte optimální výživu a podporujete celkové zdraví. To může vést k uspokojivějším, zdravějším volbám jídel a snížit pravděpodobnost impulzivních, nezdravých voleb."
+      }
+    },
+    "Testimonials": {
+      "Title": "Recenze",
+      "Sarah": {
+        "Name": "Sarah, 32",
+        "Text": "Tato aplikace pro sledování jídla pro mě byla převratná. Je snadné ji používat a pomohla mi udržet si přehled o mých nutričních cílech. Nedokážu si představit, že bych zvládal svou stravu bez ní!"
+      },
+      "John": {
+        "Name": "John, 45",
+        "Text": "Vyzkoušel jsem několik aplikací pro sledování jídla a tato je zdaleka nejlepší. Uživatelsky přívětivé rozhraní a komplexní funkce sledování mi usnadnily udržování zdravějšího životního stylu. Vřele ji doporučuji!"
+      },
+      "Emily": {
+        "Name": "Emily, 28",
+        "Text": "Jako zaneprázdněná profesionálka jsem měla dříve problémy se sledováním jídel. Tato aplikace to velmi usnadnila! Miluji, jak rychle mohu zaznamenat svůj příjem jídla a vidět nutriční rozložení. Je to fantastický nástroj!"
+      },
+      "Michael": {
+        "Name": "Michael, 38",
+        "Text": "Tuto aplikaci používám již šest měsíců a výsledky jsou neuvěřitelné. Podrobná analytika mi pomáhá pochopit mé stravovací vzorce a dělat lepší volby. Je to jako mít nutričního poradce v kapse!"
+      },
+      "Lisa": {
+        "Name": "Lisa, 29",
+        "Text": "Konečně aplikace pro sledování jídla, která opravdu funguje! Skener čárových kódů je záchranou a miluji, jak si pamatuje moje oblíbená jídla. Moje energetické hladiny se od začátku sledování výrazně zlepšily."
+      },
+      "David": {
+        "Name": "David, 52",
+        "Text": "Jako někdo, kdo zvládá diabetes, je tato aplikace nezbytná. Možnost sledovat nejen kalorie, ale také sacharidy a další živiny udělala obrovský rozdíl v mém zdraví. Vřele doporučuji všem, kteří myslí vážně svou stravu."
+      }
+    }
+  },
+  "LoginPage": {
+    "Title": "Přihlásit se",
+    "Subtitle": "Zadejte své přihlašovací údaje pro přístup k účtu",
+    "GoogleButton": "Přihlásit se přes Google",
+    "ForgotPassword": "Zapomněli jste heslo?",
+    "RememberMe": "Zapamatovat si informace",
+    "NotAMember": "Nejste členem?"
+  },
+  "SignUpPage": {
+    "Title": "Vytvořit účet",
+    "GoogleButton": "Registrovat se přes Google",
+    "Name": "Jméno",
+    "AlreadyMember": "Už jste členem?"
+  },
+  "ForgotPasswordPage": {
+    "Title": "Zapomněli jste heslo?",
+    "Subtitle": "Žádný problém, pošleme vám instrukce k obnovení.",
+    "SubmitButton": "Obnovit heslo",
+    "BackToLogin": "Zpět na přihlášení"
+  },
+  "CookieBanner": {
+    "Title": "Souhlas s cookies",
+    "Description": "Používáme cookies ke zlepšení vašeho prohlížení, analýze návštěvnosti a personalizaci obsahu. Můžete si vybrat, zda přijmout všechny cookies nebo pouze nezbytné. Pro více informací si přečtěte naše",
+    "PolicyLink": "zásady cookies",
+    "EssentialOnly": "Pouze nezbytné",
+    "AcceptAll": "Přijmout vše"
+  },
+  "Footer": {
+    "Copyright": "iTrackFood. Všechna práva vyhrazena."
+  }
+}
