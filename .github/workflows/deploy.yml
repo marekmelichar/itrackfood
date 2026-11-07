@@ -1,0 +1,60 @@
+# Build and deploy to https://itrackfood.nettio.eu on every push to main.
+# The VPS side only accepts a packed build through a restricted key (forced command
+# ~/itrackfood/deploy-receive.sh, see the VPS-manager repo); this key cannot open a shell.
+# Secret: ITRACKFOOD_DEPLOY_KEY (private key). Host key pinned below.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.3.0'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+        env:
+          HUSKY: '0'
+
+      - name: Build
+        run: |
+          cp env.example.js env.js
+          npm run build
+          test -f build/index.html
+
+      - name: Upload to the VPS
+        env:
+          DEPLOY_KEY: ${{ secrets.ITRACKFOOD_DEPLOY_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          echo '62.84.190.4 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAqY4PyGvspZYfzpUqDSZEifChq/FBI5J4EtOUU4AyNT' > ~/.ssh/known_hosts
+          tar -czf - -C build . | ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes -o "UserKnownHostsFile=$HOME/.ssh/known_hosts" \
+            deploy@62.84.190.4 "deploy ${GITHUB_SHA::7}"
+          rm -f ~/.ssh/deploy_key
+
+      - name: Check the live site
+        run: |
+          sleep 2
+          curl -fsS https://itrackfood.nettio.eu/ | grep -q '<title>iTrackFood</title>'
+          curl -fsS https://itrackfood.nettio.eu/BUILD.txt | grep -q "^${GITHUB_SHA::7} "
+          echo "live: $(curl -fsS https://itrackfood.nettio.eu/BUILD.txt)"
